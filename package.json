@@ -1,0 +1,25 @@
+{
+  "name": "stripe-csv-to-klaviyo-events",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Laurence Gillian",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^20.4.4",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.1.1",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "build": "yarn tsc",
+    "create-tickets": "node dist/create-tickets.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.6",
+    "bottleneck": "^2.19.5",
+    "dayjs": "^1.11.9"
+  }
+}
